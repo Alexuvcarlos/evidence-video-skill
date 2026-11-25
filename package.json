@@ -1,0 +1,22 @@
+{
+  "name": "evidence-video",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "本地运行的循证短片制作工作台与 Agent Skill",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node server.mjs",
+    "demo": "node scripts/demo.mjs",
+    "check": "node --test tests/*.test.mjs",
+    "agent": "node bin/agent.mjs"
+  },
+  "dependencies": {
+    "sharp": "^0.35.5"
+  },
+  "bin": {
+    "evidence-video-agent": "bin/agent.mjs"
+  }
+}
